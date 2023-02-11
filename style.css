@@ -48,9 +48,9 @@ p {
 }
 
 .btn:hover {
-    border: #18213d;
-    background-color: #010820;
+    background-color: #0059F7;
     color: #fff;
+    transition: 0.7s;
 }
 
 .btn.btn-primary {
