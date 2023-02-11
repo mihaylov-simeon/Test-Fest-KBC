@@ -47,6 +47,12 @@ p {
     padding: 8px 20px;
 }
 
+.btn:hover {
+    border: #18213d;
+    background-color: #010820;
+    color: #fff;
+}
+
 .btn.btn-primary {
     background-color: #0059F7;
     color: #fff;
