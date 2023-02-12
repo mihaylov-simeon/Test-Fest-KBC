@@ -136,7 +136,7 @@ p {
     justify-content: space-between;
     align-items: center;
     max-width: 750px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     flex-wrap: wrap;
 }
 
@@ -158,6 +158,56 @@ p {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
+.trial {
+    background-color: #0059F7;
+    border: none;
+    margin: 0 auto;
+    border-radius: 20px;
+    max-width: 700px;
+    height: 250px;
+    padding: 60px 70px;
+}
+
+.trial .ready, .start{
+    text-align: center;
+}
+
+.trial .ready {
+    text-transform: uppercase;
+    color: #a6b0db;
+}
+
+.trial .start {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.trial .start-trial-btn {
+    display: flex;
+    background-color: #4687f8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 120px;
+    margin: 30px auto 0 auto;
+    padding: 10px;
+    font-size: 0.9rem;
+
+}
+
+.trial .start-trial-btn:hover {
+   background-color: #003fac;
+   transition: 0.3s;
+}
+
+.trial .start-trial-btn i {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+    margin: auto 0 auto 10px;
+}
+
 /* How does it work section */
 
 #how {
