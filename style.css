@@ -20,6 +20,10 @@ p {
     top: 0px;
 }
 
+.header .logo, .logoText:hover {
+    cursor: pointer;
+}
+
 .header .navigation {
     margin-left: auto;
 }
@@ -102,6 +106,11 @@ p {
     align-self: center;
 }
 
+#hero .hero-img:hover {
+    opacity: 70%;
+    transition: 0.5s;
+}
+
 #hero .partners {
     max-width: 900px;
     margin: 0 auto;
@@ -151,6 +160,7 @@ p {
 
 #features .card:hover {
     background-color: #121831;
+    cursor: pointer;
 }
 
 .fas {
@@ -199,6 +209,7 @@ p {
 .trial .start-trial-btn:hover {
    background-color: #003fac;
    transition: 0.3s;
+   cursor: pointer;
 }
 
 .trial .start-trial-btn i {
@@ -238,6 +249,11 @@ p {
 
 #how .row-img {
     width: 60%;
+}
+
+#how .row-img:hover {
+    opacity: 70%;
+    transition: 0.5s;
 }
 
 #how .row:nth-child(7) {
