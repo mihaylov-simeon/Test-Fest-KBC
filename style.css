@@ -1,3 +1,5 @@
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #070e27;
@@ -113,6 +115,49 @@ p {
     cursor: pointer;
 }
 
+/* FEATURES section */
+
+#features {
+    padding: 30px 70px;
+}
+
+#features .wrapper {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#features .wrapper .info-features {
+    font-size: 18px;
+}
+
+#features .card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 750px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#features .card {
+    border: 2px solid #0f2448;
+    border-radius: 20px;
+    padding: 30px;
+    height: 280px;
+    width: 350px;
+    margin: 30px 0;
+}
+
+#features .card:hover {
+    background-color: #121831;
+}
+
+.fas {
+    color: #7786cb;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
 /* How does it work section */
 
 #how {
