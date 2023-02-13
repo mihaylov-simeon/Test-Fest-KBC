@@ -275,3 +275,171 @@ hr {
     margin-bottom: 100px;
     width: 900px;
 }
+
+/* Pricing section */
+
+#pricing {
+    padding: 30px 70px;
+}
+
+#pricing .pricing-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#pricing .pricing-title .section-subtitle {
+    font-size: 18px;
+}
+
+#pricing .price-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+#pricing .price-card {
+    border: 2px solid #0f2448;
+    border-radius: 20px;
+    padding: 30px;
+    height: auto;
+    width: 310px;
+    margin: 30px 0;
+}
+
+#pricing .price-card:hover {
+    background-color: #0e1327;
+}
+
+#pricing .price-card .price {
+    display: flex;
+    font-size: 48px;
+    font-weight: bolder;
+    gap: 15px;
+}
+
+#pricing .price-card .price i {
+    font-size: 32px;
+    margin: 20px 0px 30px;
+}
+
+#pricing .price {
+    border-bottom: 2px solid #1d2758;
+    margin-bottom: 80px;
+}
+
+#pricing .package-features i {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#pricing .pricing-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4687f8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 160px;
+    margin: 100px auto 0 auto;
+    padding: 10px;
+    font-size: 0.9rem;
+
+}
+
+#pricing .pricing-btn:hover {
+   background-color: #003fac;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+#pricing .pricing-btn i {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+    margin: auto 0 auto 10px;
+}
+
+#pricing .price-card-wrapper .price-card:nth-child(2) {
+    margin-bottom: 150px;
+    background-color: #131932;
+}
+
+#pricing .price-card-wrapper .price-card:nth-child(2):hover {
+    background-color: #0e1327;
+}
+
+.trial-pricing {
+    background-color: #0059F7;
+    display: flex;
+    align-items: center;
+    border: none;
+    margin: 50px auto;
+    border-radius: 20px;
+    max-width: 700px;
+    padding: 40px 50px;
+}
+
+.trial-text-wrapper {
+    margin-right: 100px;
+}
+
+.trial-pricing .ready {
+    text-transform: uppercase;
+    color: #a6b0db;
+}
+
+.trial-pricing .start {
+    font-size: 24px;
+}
+
+.trial-pricing .start-trial-btn {
+    display: flex;
+    background-color: #4687f8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 120px;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin: 0 auto;
+
+}
+
+.trial-pricing .start-trial-btn:hover {
+   background-color: #003fac;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.trial-pricing .start-trial-btn i {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+    margin: auto 0 auto 10px;
+}
+
+/* Footer */
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1d2758;
+    height: 80px;
+    padding: 40px;
+}
+
+.footer-wrapper .footer-icons i{
+    margin-right: 20px;
+    color: #a9bde1;
+}
+
+.footer-wrapper .footer-middle-text {
+    display: flex;
+    gap: 30px;
+}
