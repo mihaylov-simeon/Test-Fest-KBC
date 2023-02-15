@@ -1,4 +1,7 @@
 @import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -19,7 +22,10 @@ p {
     background-color: #070e27;
     top: 0px;
 }
-
+.logoText {
+    text-decoration: none;
+    color: #fff;
+}
 .header .logo, .logoText:hover {
     cursor: pointer;
 }
