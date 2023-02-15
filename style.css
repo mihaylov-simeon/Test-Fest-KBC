@@ -273,7 +273,7 @@ p {
 hr {
     border-color: #7786cb;
     margin-bottom: 100px;
-    width: 900px;
+    max-width: 900px;
 }
 
 /* Pricing section */
