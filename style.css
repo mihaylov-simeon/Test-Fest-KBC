@@ -1,4 +1,5 @@
 @import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+
 html {
     scroll-behavior: smooth;
 }
@@ -12,6 +13,9 @@ body {
 p {
     color: #7786cb
 }
+
+/* Navigation */
+
 .header {
     padding: 20px 70px;
     display: flex;
@@ -22,11 +26,14 @@ p {
     background-color: #070e27;
     top: 0px;
 }
+
 .logoText {
     text-decoration: none;
     color: #fff;
 }
-.header .logo, .logoText:hover {
+
+.header .logo,
+.logoText:hover {
     cursor: pointer;
 }
 
@@ -93,7 +100,7 @@ p {
     max-width: 900px;
 }
 
-#hero .welcome > * {
+#hero .welcome>* {
     width: 45%;
 }
 
@@ -185,7 +192,8 @@ p {
     padding: 60px 70px;
 }
 
-.trial .ready, .start{
+.trial .ready,
+.start {
     text-align: center;
 }
 
@@ -213,9 +221,9 @@ p {
 }
 
 .trial .start-trial-btn:hover {
-   background-color: #003fac;
-   transition: 0.3s;
-   cursor: pointer;
+    background-color: #003fac;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .trial .start-trial-btn i {
@@ -358,9 +366,9 @@ hr {
 }
 
 #pricing .pricing-btn:hover {
-   background-color: #003fac;
-   transition: 0.3s;
-   cursor: pointer;
+    background-color: #003fac;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 #pricing .pricing-btn i {
@@ -387,11 +395,8 @@ hr {
     margin: 50px auto;
     border-radius: 20px;
     max-width: 900px;
-    padding: 40px 50px;
-}
-
-.trial-text-wrapper {
-    margin: 0 200px 0 60px;
+    min-width: 300px;
+    padding: 50px 50px;
 }
 
 .trial-pricing .ready {
@@ -412,14 +417,13 @@ hr {
     width: 120px;
     padding: 10px;
     font-size: 0.9rem;
-    margin: 0 auto;
-
+    margin-left: 300px;
 }
 
 .trial-pricing .start-trial-btn:hover {
-   background-color: #003fac;
-   transition: 0.3s;
-   cursor: pointer;
+    background-color: #003fac;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .trial-pricing .start-trial-btn i {
@@ -440,7 +444,7 @@ hr {
     padding: 40px;
 }
 
-.footer-wrapper .footer-icons i{
+.footer-wrapper .footer-icons i {
     margin-right: 20px;
     color: #a9bde1;
     cursor: pointer;
@@ -450,4 +454,123 @@ hr {
     display: flex;
     gap: 30px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+
+    /* Hero section */
+
+    #hero .welcome {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #hero .welcome .title {
+        width: 100%;
+    }
+
+    #hero .welcome>div {
+        width: 70%;
+    }
+
+    /* How it is done section */
+
+    #how .row {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 70px;
+    }
+
+    #how .row .wrapper {
+        width: 80%;
+        text-align: center;
+    }
+
+    #how .row-img {
+        width: 80%;
+    }
+
+    #how .row-img:hover {
+        opacity: 70%;
+        transition: 0.5s;
+    }
+
+    #how .row .title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    #how .row .description {
+        font-size: 14px;
+    }
+
+    #how .row:nth-child(7) {
+        flex-direction: column;
+
+    }
+
+    hr {
+
+        margin-bottom: 50px;
+    }
+}
+
+
+ /* Pricing section */
+
+ @media screen and (max-width: 1000px) {
+
+    .trial-pricing,
+    .trial {
+        display: none;
+    }
+}
+@media screen and (max-width: 550px) {
+
+    /* Navigation */
+
+    .header .navigation {
+        display: none;
+    }
+
+    .btn {
+        margin-left: auto;
+    }
+
+    /* Hero section */
+
+    #hero {
+        padding: 40px 70px;
+    }
+
+    #hero .welcome {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #hero .welcome .title {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    #hero .welcome>div {
+        font-size: 16px;
+        width: 90%;
+    }
+
+ 
+    #hero .partners {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    /* Features section */
+
+    /* How it is done section */
+
+   
 }
