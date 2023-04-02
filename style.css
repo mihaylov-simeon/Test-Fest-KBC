@@ -155,7 +155,7 @@ p {
 
 #features .card-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 750px;
     margin: 0 auto 50px auto;
@@ -168,7 +168,7 @@ p {
     padding: 30px;
     height: 280px;
     width: 350px;
-    margin: 30px 0;
+    margin: 30px 10px;
 }
 
 #features .card:hover {
@@ -308,7 +308,7 @@ hr {
 
 #pricing .price-card-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
@@ -320,8 +320,8 @@ hr {
     border-radius: 20px;
     padding: 30px;
     height: auto;
-    width: 310px;
-    margin: 30px 0;
+    width: 300px;
+    margin: 30px 10px;
 }
 
 #pricing .price-card:hover {
@@ -456,7 +456,7 @@ hr {
     cursor: pointer;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 700px) {
 
     /* Hero section */
 
@@ -568,9 +568,6 @@ hr {
         gap: 20px;
     }
 
-    /* Features section */
-
     /* How it is done section */
 
-   
 }
