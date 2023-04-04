@@ -149,6 +149,7 @@ i span{
   letter-spacing: 1px;
   font-size: 16px;
   font-family: 'Poppins',sans-serif;
+  font-style: normal;
 }
 .signup{
   font-size: 15px;
@@ -161,6 +162,7 @@ i span{
 }
 .signup a:hover{
   text-decoration: underline;
+  color: #fff;
 }
 
 .cancel-field .cancel-btn {
