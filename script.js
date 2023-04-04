@@ -4,6 +4,8 @@
         loginBtn.addEventListener('click', loginBtnHandler);
     
         function loginBtnHandler() {
-            console.log('TEST');
+            window.location.href = 'login-form.html';
         }
     });
+
+    
