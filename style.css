@@ -474,6 +474,11 @@ hr {
         width: 70%;
     }
 
+    #pricing .price-card-wrapper .price-card:nth-child(2) {
+        margin-bottom: 30px;
+    }
+
+
     /* How it is done section */
 
     #how .row {
@@ -516,8 +521,15 @@ hr {
     }
 }
 
+@media screen and (max-width: 1100px) {
+    #pricing .price-card-wrapper {
+        max-width: 350px;
+    }
 
- /* Pricing section */
+    #pricing .price-card-wrapper .price-card:nth-child(2) {
+        margin-bottom: 30px;
+    }
+}
 
  @media screen and (max-width: 1000px) {
 
@@ -528,8 +540,6 @@ hr {
 }
 @media screen and (max-width: 550px) {
 
-    /* Navigation */
-
     .header .navigation {
         display: none;
     }
@@ -537,8 +547,6 @@ hr {
     .btn {
         margin-left: auto;
     }
-
-    /* Hero section */
 
     #hero {
         padding: 40px 70px;
@@ -567,7 +575,4 @@ hr {
         justify-content: space-evenly;
         gap: 20px;
     }
-
-    /* How it is done section */
-
 }
