@@ -28,9 +28,16 @@ p {
     box-shadow: 0px 2px 15px rgb(5, 23, 84);
 }
 
+.logo {
+    width: 6%;
+    display: inline;
+}
+
 .logoText {
     text-decoration: none;
     color: #fff;
+    display: inline;
+
 }
 
 .header .logo,
@@ -285,10 +292,10 @@ p {
     font-size: 14px;
 }
 
-hr {
-    border-color: #7786cb;
-    margin-bottom: 100px;
-    max-width: 900px;
+.hr-container > hr {
+    border-color: #141d3b;
+    margin: 100px auto;
+    max-width: 50%;
 }
 
 /* Pricing section */
@@ -627,7 +634,6 @@ hr {
     }
 
     hr {
-
         margin-bottom: 50px;
     }
 }
@@ -649,8 +655,5 @@ hr {
         display: none;
     }
 }
-
-
-    /* How it is done section */
 
 
