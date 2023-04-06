@@ -88,11 +88,13 @@ p {
 .btn.btn-primary {
     background-color: #0059F7;
     color: #fff;
+    font-weight: bold;
+
 }
 
 .btn.btn-primary:hover {
-    background-color: #003fac;
-    color: #fff;
+    background-color: #ffffff ;
+    color: #003289;
 }
 
 
