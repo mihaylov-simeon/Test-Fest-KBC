@@ -16,27 +16,27 @@
         getStarterTrialTwoBtn.addEventListener('click', getStartedTrialTwoHandler)
 
         function loginBtnHandler() {
-            window.open('login-form.html', '_blank')
+            window.location.href = 'login-form.html'
         }
         
         function priceCardOneHandler() {
-            window.open('login-form.html', '_blank')
+            window.location.href = 'login-form.html'
         }
 
         function getStartedTrialBtnHandler() {
-            window.open('login-form.html', '_blank')
+            window.location.href = 'login-form.html'
         }
 
         function priceCardTwoHandler() {
-            window.open('login-form.html', '_blank')
+            window.location.href = 'login-form.html'
         }
 
         function priceCardThreeHandler() {
-            window.open('login-form.html', '_blank')
+            window.location.href = 'login-form.html'
         }
 
         function getStartedTrialTwoHandler() {
-            window.open('login-form.html', '_blank')
+            window.location.href = 'login-form.html'
         }
     });
 
@@ -46,7 +46,7 @@
         bookConsultationBtn.addEventListener('click', bookingBtnHandler);
     
         function bookingBtnHandler() {
-            window.open('consultation-form.html', '_blank');
+            window.location.href = 'consultation-form.html'
         }
     });
 
