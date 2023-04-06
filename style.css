@@ -149,7 +149,8 @@ p {
     height: auto;
 }
 
-#hero .partners:hover {
+#hero .partners img:hover {
+    opacity: 70%;
     cursor: pointer;
 }
 
@@ -431,7 +432,7 @@ p {
     color: white;
     border: none;
     border-radius: 8px;
-    width: 120px;
+    width: 150px;
     padding: 10px;
     font-size: 0.9rem;
     margin-left: 300px;
