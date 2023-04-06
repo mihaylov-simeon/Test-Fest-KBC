@@ -12,9 +12,7 @@ showBtn.addEventListener("click", function () {
   }
 });
 
-const afterLoginPage = document.querySelector(
-  "body > div > div > div.cancel-field > button"
-);
+const afterLoginPage = document.querySelector("body > div > div > div.cancel-field > button");
 
 afterLoginPage.addEventListener("click", reloadIndexPage);
 

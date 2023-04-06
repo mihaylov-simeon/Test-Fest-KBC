@@ -1,6 +1,4 @@
-const afterLoginPage = document.querySelector(
-  "body > div > div > div.cancel-field > cancel-btn"
-);
+const afterLoginPage = document.querySelector("body > div > div > div.cancel-field > button");
 
 afterLoginPage.addEventListener("click", reloadIndexPage);
 
