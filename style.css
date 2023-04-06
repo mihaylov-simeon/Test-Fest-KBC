@@ -136,12 +136,17 @@ p {
 }
 
 #hero .partners {
-    max-width: 900px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 8%;
+}
+
+#hero > ul {
+    width: 60%;
+    height: auto;
 }
 
 #hero .partners:hover {
@@ -494,15 +499,7 @@ p {
     #hero .welcome>div {
         font-size: 16px;
         width: 90%;
-    }
-    
-    
-    #hero .partners {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 20px;
-    }
+    }    
 }
     @media screen and (max-width: 430px) {
 
@@ -645,10 +642,12 @@ p {
     #pricing .price-card-wrapper .price-card:nth-child(2) {
         margin-bottom: 30px;
     }
+
+      
+   
 }
 
  @media screen and (max-width: 1000px) {
-
     .trial-pricing,
     .trial {
         display: none;
