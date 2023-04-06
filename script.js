@@ -1,3 +1,5 @@
+    
+    
     document.addEventListener('DOMContentLoaded', () => {
         const loginBtn = document.querySelector('body > header > button');
         const geStartedTrialBtn = document.querySelector('#features > div.trial > button');
@@ -47,5 +49,9 @@
             window.open('consultation-form.html', '_blank');
         }
     });
+
+
+    
+  
 
     
