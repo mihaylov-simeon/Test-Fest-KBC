@@ -46,7 +46,6 @@ p {
     text-decoration: none;
     color: #fff;
     display: inline;
-
 }
 
 .header .logo,
@@ -63,20 +62,23 @@ p {
     display: flex;
     gap: 15px;
     margin-right: 30px;
+    font-weight: bold;
 }
 
 .header .nav-list a {
     color: #fff;
+    border: 2px solid transparent;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
+    padding: 4px;
 }
 
 .header .nav-list a:hover {
-    color: #2f71e4;
-    text-decoration: overline;
-    transition: 0.3s;
+    color: #000c21;
+    transition: 0.8s;
     cursor: pointer;
+    box-shadow: inset 100px 0 0 0 #e0e0fd;
 }
 
 .btn {
