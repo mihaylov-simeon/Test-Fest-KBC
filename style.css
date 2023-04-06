@@ -6,7 +6,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to top, #01000a 0%, #000926 100%);
+    background: linear-gradient(to top, #01000a 0%, #000c32 100%);
     color: #fff;
 }
 
@@ -101,7 +101,7 @@ p {
     inset: 0 0 auto;
     height: .3rem;
     background-color: rgb(0, 110, 141);
-    box-shadow: 0px 2px 15px rgb(5, 23, 84);
+    box-shadow: 0px 5px 10px rgb(19, 76, 145);
 }
 
 /* Hero section */
