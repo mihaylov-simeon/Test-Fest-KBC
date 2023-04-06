@@ -29,12 +29,20 @@ p {
     z-index: 1000;
 }
 
+.header a {
+    text-decoration: none;
+}
+
 .logo {
     width: 35px;
     display: inline;
 }
 
 .logoText {
+    background-color: transparent;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
     text-decoration: none;
     color: #fff;
     display: inline;
@@ -44,6 +52,7 @@ p {
 .header .logo,
 .logoText:hover {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header .navigation {
