@@ -113,12 +113,14 @@ p {
   width: 100%;
   height: 8px;
   background: #ccc;
+  position: fixed;
 }
 
 .progress-bar {
   height: 8px;
   background: #04AA6D;
   width: 0%;
+  position: fixed;
 }
 
 /* Hero section */
