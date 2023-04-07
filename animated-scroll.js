@@ -6,7 +6,7 @@ document.querySelector('.scroll-tracker').animate(
     {
       duration: 7500,
       fill: 'forwards',
-      transition: Infinity,
+      iterations: Infinity,
       easing: 'cubicBezier(.5, .05, .1, .3)'
      }
     
