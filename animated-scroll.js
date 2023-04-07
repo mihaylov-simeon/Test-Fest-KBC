@@ -7,5 +7,6 @@ document.querySelector('.scroll-tracker').animate(
       duration: 2500,
       fill: 'forwards',
       easing: 'linear',
+      iterations: 'infinity',
      }
   );
