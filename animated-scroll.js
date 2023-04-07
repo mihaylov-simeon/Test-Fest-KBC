@@ -1,10 +1,10 @@
-$(function() {
-    $(".scroll-tracker").each(function() {
-        $(this)
-            .data("origWidth", $(this).width())
-            .width(0)
-            .animate({
-                 width: $(this).data("origWidth")
-                 }, 1200);
-    });
-});
+window.onscroll = function() {
+    onScrollFunction()
+};
+
+function onScrollFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById(".scroll-tracker").style.width = scrolled + "%";
+}
