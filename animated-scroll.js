@@ -1,12 +1,10 @@
-document.querySelector('.scroll-tracker').animate(
-    {
-      backgroundColor: ['#0059F7'],
-      transform: ['scaleX(0)', 'scaleX(1)'],
-    },
-    {
-      duration: 7500,
-      fill: 'forwards',
-      easing: 'linear',
-     }
-    
-  );
+$(function() {
+    $(".meter > span").each(function() {
+        $(this)
+            .data("origWidth", $(this).width())
+            .width(0)
+            .animate({
+                 width: $(this).data("origWidth")
+                 }, 1200);
+    });
+});
