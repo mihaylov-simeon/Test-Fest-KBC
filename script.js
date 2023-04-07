@@ -57,7 +57,6 @@ let topBtn = document.getElementById("topBtn");
 window.onscroll = function() {
     scrollFunction();
     scrollBarTracker();
-    topFunction();
 };
 
 function scrollFunction() {
