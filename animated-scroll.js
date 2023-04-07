@@ -1,5 +1,5 @@
 $(function() {
-    $(".meter > span").each(function() {
+    $(".scroll-tracker").each(function() {
         $(this)
             .data("origWidth", $(this).width())
             .width(0)
