@@ -4,7 +4,7 @@ document.querySelector('.scroll-tracker').animate(
       transform: ['scaleX(0)', 'scaleX(1)'],
     },
     {
-      duration: 6500,
+      duration: 8500,
       fill: 'forwards',
       easing: 'linear',
       iterations: Infinity,
