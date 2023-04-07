@@ -4,9 +4,11 @@ document.querySelector('.scroll-tracker').animate(
       transform: ['scaleX(0)', 'scaleX(1)'],
     },
     {
-      duration: 8500,
+      duration: 7500,
       fill: 'forwards',
-      easing: 'linear',
-      iterations: Infinity,
+      direction: 'alternate',
+      loop: true,
+      easing: 'cubicBezier(.5, .05, .1, .3)'
      }
+    
   );
