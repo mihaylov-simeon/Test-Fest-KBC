@@ -1,12 +1,14 @@
     
     
-    document.addEventListener('DOMContentLoaded', () => {
+// Selectors and event listeners    
+document.addEventListener('DOMContentLoaded', () => {
         const loginBtn = document.querySelector('body > header > button');
         const geStartedTrialBtn = document.querySelector('#features > div.trial > button');
         const priceCardBtnOne = document.querySelector('#pricing > div.price-card-wrapper > div:nth-child(1) > button');
         const priceCardBtnTwo = document.querySelector('#pricing > div.price-card-wrapper > div:nth-child(2) > button');
         const priceCardBtnThree = document.querySelector('#pricing > div.price-card-wrapper > div:nth-child(3) > button');
         const getStarterTrialTwoBtn = document.querySelector('#pricing > div.trial-pricing > button');
+        const topBtn = document.getElementById("topBtn");
     
         loginBtn.addEventListener('click', loginBtnHandler);
         geStartedTrialBtn.addEventListener('click', getStartedTrialBtnHandler)
@@ -15,6 +17,7 @@
         priceCardBtnThree.addEventListener('click', priceCardThreeHandler)
         getStarterTrialTwoBtn.addEventListener('click', getStartedTrialTwoHandler)
 
+// functionality
         function loginBtnHandler() {
             window.location.href = 'login-form.html'
         }
@@ -40,6 +43,7 @@
         }
     });
 
+// booking consultation form redirect
     document.addEventListener('DOMContentLoaded', () => {
         const bookConsultationBtn = document.querySelector('#welcome-heading > div > a > button');
     
@@ -50,8 +54,8 @@
         }
     });
 
-// Get the button:
-let topBtn = document.getElementById("topBtn");
+
+
 
 // When the user scrolls down 1500px from the top of the document, show the button
 window.onscroll = function() {
