@@ -489,7 +489,7 @@ p {
   z-index: 99;
   width: 80px;
   border: none;
-  background-color: rgb(0, 89, 247, 0.7);
+  background-color: rgb(0, 89, 247, 0.5);
   color: white;
   cursor: pointer;
   font-weight: bold;
