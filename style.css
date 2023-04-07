@@ -109,7 +109,7 @@ p {
 }
 
 
-.scroll-tracker {
+#scroll-tracker {
     position: sticky;
     width: 0%;
     inset: 0 0 auto;
