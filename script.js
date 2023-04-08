@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // When the user scrolls down 1500px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
+  scrollBarTracker();
 };
 
 function scrollFunction() {
