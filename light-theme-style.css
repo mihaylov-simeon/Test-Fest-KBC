@@ -773,9 +773,6 @@ label::after {
     #pricing .price-card-wrapper .price-card:nth-child(2) {
         margin-bottom: 30px;
     }
-
-      
-   
 }
 
  @media screen and (max-width: 1000px) {

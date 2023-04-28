@@ -1,5 +1,7 @@
+// login form linked buttons
 document.addEventListener("DOMContentLoaded", () => {
   const loginBtn = document.querySelector("body > header > button");
+
   const geStartedTrialBtn = document.querySelector(
     "#features > div.trial > button"
   );
@@ -48,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// book consultation linked buttons
 document.addEventListener("DOMContentLoaded", () => {
   const bookConsultationBtn = document.querySelector(
     "#welcome-heading > div > a > button"
@@ -61,10 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Theme switcher function
-const switcher = document.getElementById("switcher");
-const stylesheet = document.getElementById("main-stylesheet");
-
 switcher.addEventListener("change", () => {
+  const switcher = document.getElementById("switcher");
+  const stylesheet = document.getElementById("main-stylesheet");
+
   if (switcher.checked) {
     stylesheet.setAttribute("href", "light-theme-style.css");
   } else {
@@ -72,12 +75,13 @@ switcher.addEventListener("change", () => {
   }
 });
 
-// When the user scrolls down 1500px from the top of the document, show the button
+// call functions on scroll
 window.onscroll = function () {
   scrollFunction();
   scrollBarTracker();
 };
 
+// When the user scrolls down 1500px from the top of the document, show the button
 function scrollFunction() {
   if (
     document.body.scrollTop > 1500 ||
@@ -95,6 +99,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+// scroll bar tracker function
 function scrollBarTracker() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height =
