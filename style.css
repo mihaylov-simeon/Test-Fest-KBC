@@ -619,6 +619,14 @@ label::after {
         #hero .welcome .title {
             font-size: 1.4rem;
         }
+
+        #label {
+            display: none;
+        }
+
+        .switcher-wrapper {
+            margin-left: 30px;
+        }
        
         #features {
             padding: 20px 20px;
