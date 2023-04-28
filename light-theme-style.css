@@ -774,6 +774,12 @@ label::after {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .logo {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1100px) {
     #pricing .price-card-wrapper {
         max-width: 350px;
