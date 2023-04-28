@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// Theme switcher function
 const switcher = document.getElementById("switcher");
 const stylesheet = document.getElementById("main-stylesheet");
 
