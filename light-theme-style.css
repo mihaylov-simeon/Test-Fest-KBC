@@ -581,6 +581,84 @@ label::after {
     cursor: pointer;
 }
 
+@media screen and (max-width: 430px) {
+
+    .header {
+        padding: 10px 30px;
+    }
+    #hero {
+        padding: 40px 20px;
+    }
+    #hero .welcome .title {
+        font-size: 1.4rem;
+    }
+   
+    #features {
+        padding: 20px 20px;
+    }
+
+    #features > div.card-wrapper > div > p {
+        font-size: 0.8rem
+    }
+
+    #features > div.wrapper > h1 {
+        font-size: 1.4rem;
+    }
+
+    #features .card-wrapper {
+        margin: 0 auto;
+    }
+
+    #how {
+        padding: 10px 20px;
+    }
+
+    #how .section-title {
+        font-size: 1.4rem;
+    }
+
+    #pricing {
+        padding: 10px 20px
+    }
+
+    #pricing > div.pricing-title > h1 {
+        font-size: 1.4rem;
+    }
+
+    #pricing .price-card {
+        font-size: 0.8rem;
+    }
+
+    .footer-wrapper {
+        height: 90px;
+        padding: 20px;
+    }
+
+    .footer-wrapper .footer-icons i {
+        margin-right: 10px;
+        color: #a9bde1;
+        cursor: pointer;
+    }
+
+    .footer-wrapper .footer-middle-text {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    body > footer > div > p {
+        font-size: 13px;
+
+    }
+
+    #hero > ul {
+        width: 80%;
+        transition: 1s;
+
+    }
+}
 
 @media screen and (max-width: 645px) {
     .header .navigation {
@@ -611,84 +689,7 @@ label::after {
     }    
    
 }
-    @media screen and (max-width: 430px) {
-
-        .header {
-            padding: 10px 30px;
-        }
-        #hero {
-            padding: 40px 20px;
-        }
-        #hero .welcome .title {
-            font-size: 1.4rem;
-        }
-       
-        #features {
-            padding: 20px 20px;
-        }
-
-        #features > div.card-wrapper > div > p {
-            font-size: 0.8rem
-        }
-
-        #features > div.wrapper > h1 {
-            font-size: 1.4rem;
-        }
-
-        #features .card-wrapper {
-            margin: 0 auto;
-        }
-
-        #how {
-            padding: 10px 20px;
-        }
-
-        #how .section-title {
-            font-size: 1.4rem;
-        }
-
-        #pricing {
-            padding: 10px 20px
-        }
-
-        #pricing > div.pricing-title > h1 {
-            font-size: 1.4rem;
-        }
-
-        #pricing .price-card {
-            font-size: 0.8rem;
-        }
-
-        .footer-wrapper {
-            height: 90px;
-            padding: 20px;
-        }
-
-        .footer-wrapper .footer-icons i {
-            margin-right: 10px;
-            color: #a9bde1;
-            cursor: pointer;
-        }
-
-        .footer-wrapper .footer-middle-text {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            font-size: 13px;
-            cursor: pointer;
-        }
-
-        body > footer > div > p {
-            font-size: 13px;
-
-        }
-
-        #hero > ul {
-            width: 80%;
-            transition: 1s;
-
-        }
-    }
+    
 
 @media screen and (max-width: 700px) {
 
