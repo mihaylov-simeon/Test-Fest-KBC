@@ -545,7 +545,7 @@ label::after {
   z-index: 99;
   width: 80px;
   border: none;
-  background-color: rgba(1, 73, 197, 0.598);
+  background-color: rgba(1, 73, 197, 0.776);
   color: white;
   cursor: pointer;
   font-weight: bold;
@@ -564,14 +564,14 @@ label::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #101634;
+    background-color: #99b7e4;
     height: 80px;
     padding: 40px;
 }
 
 .footer-wrapper .footer-icons i {
     margin-right: 10px;
-    color: #a9bde1;
+    color: #002569;
     cursor: pointer;
 }
 
