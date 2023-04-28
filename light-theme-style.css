@@ -581,14 +581,24 @@ label::after {
     cursor: pointer;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 460px) {
 
     .header {
         padding: 10px 30px;
     }
+
     #hero {
-        padding: 40px 20px;
+        padding: 30px 20px;
     }
+
+     .logo {
+        width: 15px;
+    }
+
+    .logoText {
+        font-size: 0.5rem;
+    }
+
     #hero .welcome .title {
         font-size: 1.4rem;
     }
@@ -657,6 +667,16 @@ label::after {
         width: 80%;
         transition: 1s;
 
+    }
+}
+
+@media screen and (max-width: 538px) {
+    .logo {
+        width: 20px;
+    }
+
+    .logoText {
+        font-size: 1rem;
     }
 }
 
