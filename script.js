@@ -60,6 +60,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+const switcher = document.getElementById("switcher");
+const stylesheet = document.getElementById("main-stylesheet");
+
+switcher.addEventListener("change", () => {
+  if (switcher.checked) {
+    stylesheet.setAttribute("href", "light-theme-style.css");
+  } else {
+    stylesheet.setAttribute("href", "style.css");
+  }
+});
+
 // When the user scrolls down 1500px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();

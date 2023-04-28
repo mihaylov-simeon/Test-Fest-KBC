@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" id="main-stylesheet">
     <link rel="stylesheet" href="login-form-style.css">
     <link rel="stylesheet" href="consultation-form.css">
     <title>.Codika</title>
@@ -14,15 +14,21 @@
 </head>
 
 <body>
-
-  
     <!-- NAVIGATION -->
     <header class="header">
         <a href="#hero">
         <img src="img/logo.png" alt="Logo" class="logo">
-        <button onclick="topFunction()" class="logoText" title="Go to top logo">.Codika</button> 
+        <button onclick="topFunction()" class="logoText" title="Go to top logo">.Codika</button>
     </a>
 
+    <div class="switcher-wrapper">
+        <span id="label">THEME</span>
+        <div class="theme-switcher">
+            <input type="checkbox" id="switcher">
+            <label for="switcher">Theme </label>
+        </div>
+    </div>
+    
         <nav class="navigation" id="nav-bar">
             <ul class="nav-list" role="list">
                 <li class="nav-item">
@@ -34,6 +40,7 @@
                 <li class="nav-item">
                     <a href="#pricing">Pricing</a>
                 </li>
+                
             </ul>
         </nav>
         <button class="btn">Login</button>
