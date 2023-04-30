@@ -131,7 +131,7 @@ function webAppsHandler() {
 }
 
 function webDevelopmentHandler() {
-  window.location.href = "web-apps.html"
+  window.location.href = "web-consultation.html"
 }
 
 function backEndDevelopmentHandler() {
