@@ -1,9 +1,5 @@
 @import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(to top, #01000a 0%, #000c32 100%);
@@ -15,8 +11,6 @@ p {
 }
 
 /* Navigation */
-
-
 .header {
     padding: 20px 70px;
     display: flex;
@@ -608,7 +602,7 @@ label::after {
     }    
    
 }
-    @media screen and (max-width: 430px) {
+    @media screen and (max-width: 500px) {
 
         .header {
             padding: 10px 30px;
@@ -791,4 +785,3 @@ label::after {
         display: none;
     }
 }
-

@@ -33,6 +33,23 @@
   background: rgba(255,255,255,0.04);
   box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
 }
+
+/* Media query for smaller screens */
+@media (max-width: 700px) {
+  .content {
+    padding: 100px 32px;
+    width: 570px;
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 570px) {
+  .content {
+    padding: 50px 16px;
+    width: 100%;
+  }
+}
+
 .content header{
   color: white;
   font-size: 33px;
@@ -181,3 +198,4 @@ i span{
 .cancel-field .cancel-btn:hover{
   background: #2691d9;
 }
+

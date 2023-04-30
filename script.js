@@ -108,3 +108,45 @@ function scrollBarTracker() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+// Linking cards to their own pages
+
+const webAppsCard = document.querySelector("#features > div.card-wrapper > div:nth-child(1)");
+const webDevelopmentCard = document.querySelector("#features > div.card-wrapper > div:nth-child(2)");
+const backEndDevelopmentCard = document.querySelector("#features > div.card-wrapper > div:nth-child(3)");
+const uxUICard = document.querySelector("#features > div.card-wrapper > div:nth-child(4)");
+const APIDevelopmentCard = document.querySelector("#features > div.card-wrapper > div:nth-child(5)");
+const personalMaintenanceCard = document.querySelector("#features > div.card-wrapper > div:nth-child(6)");
+
+webAppsCard.addEventListener('click', webAppsHandler);
+webDevelopmentCard.addEventListener('click',webDevelopmentHandler);
+backEndDevelopmentCard.addEventListener('click', backEndDevelopmentHandler);
+uxUICard.addEventListener('click', uxUIHandler);
+APIDevelopmentCard.addEventListener('click', APIDevelopmentHandler);
+personalMaintenanceCard.addEventListener('click', personalMaintenanceHandler);
+
+
+function webAppsHandler() {
+  window.location.href = "web-apps.html"
+}
+
+function webDevelopmentHandler() {
+  window.location.href = "web-apps.html"
+}
+
+function backEndDevelopmentHandler() {
+  window.location.href = "web-apps.html"
+}
+
+function uxUIHandler() {
+  window.location.href = "web-apps.html"
+}
+
+function APIDevelopmentHandler() {
+  window.location.href = "web-apps.html"
+}
+
+function personalMaintenanceHandler() {
+  window.location.href = "web-apps.html"
+}
+
