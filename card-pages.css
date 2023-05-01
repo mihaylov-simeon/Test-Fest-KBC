@@ -253,5 +253,9 @@ label::after {
    #hero > div > div.hero-img {
     margin-bottom: 0;
    }
+
+   .logo {
+    display: none;
+   }
 }
 
