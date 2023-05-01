@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <title>Web Apps</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="card-pages.css" />
+    <link rel="stylesheet" href="card-light.css">
+    <link rel="stylesheet" href="card-pages.css" id="main-stylesheet" />
 
   </head>
   <body>
@@ -14,6 +15,15 @@
             <img src="img/logo.png" alt="Logo" class="logo">
             <button class="logoText" title="Go to top logo">Web Apps</button>
         </a>
+
+        <div class="switcher-wrapper">
+          <span id="label">THEME</span>
+          <div class="theme-switcher">
+              <input type="checkbox" id="switcher">
+              <label for="switcher">Theme </label>
+          </div>
+      </div>
+
       <nav class="navigation">
         <ul class="nav-list" type="none">
           <li><a href="#">Home</a></li>
@@ -62,9 +72,7 @@
           </p>
         </li>
         <br>
-        <a href="#"><button class="btn btn-primary">
-            Book a consultation
-        </button></a>
+        
       </ul>
     </section>
 
@@ -86,7 +94,8 @@
             <p>2023 All rights reserved</p>
         </div>
     </footer>
-
+    
+    <script src="theme-switcher-card-pages.js"></script>
     <script src="return-to-home.js"></script>
   </body>
 </html>

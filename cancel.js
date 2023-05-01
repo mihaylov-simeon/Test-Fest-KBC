@@ -1,4 +1,4 @@
-const returnToMainWebsite = document.querySelector("body > header > nav > ul > li > a");
+const returnToMainWebsite = document.querySelector("body > div > div > div.cancel-field > button");
 
 returnToMainWebsite.addEventListener('click', returnToMainWebsiteHandler);
 

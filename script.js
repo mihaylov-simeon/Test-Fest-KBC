@@ -139,14 +139,14 @@ function backEndDevelopmentHandler() {
 }
 
 function uxUIHandler() {
-  window.location.href = "web-apps.html"
+  window.location.href = "ui-ux-process.html"
 }
 
 function APIDevelopmentHandler() {
-  window.location.href = "web-apps.html"
+  window.location.href = "api-development.html"
 }
 
 function personalMaintenanceHandler() {
-  window.location.href = "web-apps.html"
+  window.location.href = "personal-maintenance.html"
 }
 
