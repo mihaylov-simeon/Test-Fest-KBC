@@ -195,12 +195,27 @@ label::after {
 
 #hero > ul {
     padding-left: 0px;
-    max-width: 900px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 #hero > ul h2 {
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#hero > ul p  {
+    margin-bottom: 20px;
+    border: 2px solid #0f2448;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#hero > ul p:hover  {
+    background-color: #0f2448;
 }
 
 #hero .hero-img:hover {
