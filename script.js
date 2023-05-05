@@ -149,3 +149,15 @@ function APIDevelopmentHandler() {
 function personalMaintenanceHandler() {
   window.location.href = "personal-maintenance.html"
 }
+
+const navLinks = document.querySelectorAll('.nav-list a');
+
+for (const link of navLinks) {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href');
+    document.querySelector(targetId).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+}
