@@ -149,4 +149,3 @@ function APIDevelopmentHandler() {
 function personalMaintenanceHandler() {
   window.location.href = "personal-maintenance.html"
 }
-

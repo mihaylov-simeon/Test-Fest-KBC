@@ -20,11 +20,12 @@ p {
     position: sticky;
     background-color: #030715;
     top: 0px;
-    z-index: 1000;
+    z-index: 1000;    
 }
 
 .header a {
     text-decoration: none;
+    
 }
 
 .logo {
@@ -66,6 +67,7 @@ p {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 4px;
+    scroll-behavior: smooth;
 }
 
 .header .nav-list a:hover {
