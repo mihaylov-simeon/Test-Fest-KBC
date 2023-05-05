@@ -196,6 +196,12 @@ label::after {
 
 #hero > ul {
     padding-left: 0px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#hero > ul h2 {
+    margin-bottom: 20px;
 }
 
 #hero .hero-img:hover {
