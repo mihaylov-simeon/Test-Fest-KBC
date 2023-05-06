@@ -201,6 +201,10 @@ label::after {
     line-height: 1.2;
 }
 
+#hero .welcome .title {
+    animation: jackInTheBox 1s ease-in 1 normal both;
+}
+
 #hero .welcome .info {
     margin-bottom: 20px;
 }
