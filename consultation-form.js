@@ -5,3 +5,9 @@ afterLoginPage.addEventListener("click", reloadIndexPage);
 function reloadIndexPage() {
   window.location.href = "index.html";
 }
+
+function thankYouPageHandler(event) {
+  event.preventDefault();
+  window.location.href = "typewriter-text.html";
+}
+

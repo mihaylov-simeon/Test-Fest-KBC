@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Transparent Login Form UI</title>
+    <title>Consultation Form</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="consultation-form.css">
   </head>
@@ -11,7 +11,7 @@
       <div class="content">
         <header>Book a consultation</header>
 
-        <form action="#">
+        <form>
           <div class="field">
             <input type="name_text" class="name" required placeholder="Name" onkeydown="return /[a-zA-Z ]/i.test(event.key)">
           </div>
@@ -25,23 +25,21 @@
           </div>
           
           <div class="login-field">
-            <button class="consultation-btn">BOOK CONSULTATION</button>
+            <button class="consultation-btn" onclick="thankYouPageHandler(event)">BOOK CONSULTATION</button>
           </div>
-
-         
         </form>
         
         
-        <div class="signup">Don't have account?
+        <div class="signup">Don't have an account?
           <a href="#">Signup Now</a>
         </div>
 
         <div class="cancel-field">
           <button class="cancel-btn">CANCEL CONSULTATION</button>
         </div>
+      </div>
     </div>
-    </div>
-
+    <script src="consultation-form.js"></script>
     <script src="cancel.js"></script>
   </body>
 </html>
