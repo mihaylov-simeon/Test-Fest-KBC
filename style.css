@@ -194,6 +194,15 @@ label::after {
     line-height: 1.2;
 }
 
+#hero .welcome .title {
+    animation: jackInTheBox 1s steps(24, end) 0.5s 1 normal both;
+}
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 860px;}
+  }
+
 #hero .welcome .info {
     margin-bottom: 20px;
 }
