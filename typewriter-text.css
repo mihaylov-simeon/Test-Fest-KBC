@@ -3,7 +3,7 @@
 body {
   padding: 60px;
   margin: 0;
-  background-image: url('img/thank-you-bg.jpg');
+  background: linear-gradient(to top, #01000a 0%, #000c32 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
