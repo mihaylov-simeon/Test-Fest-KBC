@@ -18,4 +18,11 @@ afterLoginPage.addEventListener("click", reloadIndexPage);
 
 function reloadIndexPage() {
   window.location.href = "index.html";
-}
+};
+
+const signInNowBtn = document.querySelector("body > div > div > div.signup > a");
+
+signInNowBtn.addEventListener('click', () => {
+  window.location.href = 'sign-up.html'
+});
+
