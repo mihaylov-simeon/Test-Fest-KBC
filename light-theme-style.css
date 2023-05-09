@@ -1,3 +1,4 @@
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
 
 html {
     scroll-behavior: smooth;
@@ -572,6 +573,11 @@ label::after {
     padding: 40px;
 }
 
+.footer-wrapper a {
+    text-decoration: none;
+    color: #002569;
+}
+
 .footer-wrapper .footer-icons i {
     margin-right: 10px;
     color: #002569;
@@ -698,6 +704,21 @@ label::after {
         width: 90%;
     }    
    
+}
+
+@media screen and (max-width: 645px) and (min-width: 745px) {
+    .header .nav-list {
+        display: flex;
+        gap: 5px;
+        margin-right: 0px;
+        font-weight: bold;
+    }
+
+    .switcher-wrapper {
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+    }
 }
     
 

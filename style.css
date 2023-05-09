@@ -570,6 +570,11 @@ label::after {
     padding: 40px;
 }
 
+.footer-wrapper a {
+    text-decoration: none;
+    color: #a9bde1;
+}
+
 .footer-wrapper .footer-icons i {
     margin-right: 10px;
     color: #a9bde1;
@@ -581,7 +586,6 @@ label::after {
     gap: 30px;
     cursor: pointer;
 }
-
 
 @media screen and (max-width: 645px) {
     .header .navigation {
