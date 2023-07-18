@@ -64,16 +64,29 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Theme switcher function
-switcher.addEventListener("change", () => {
-  const switcher = document.getElementById("switcher");
-  const stylesheet = document.getElementById("main-stylesheet");
+const switcher = document.getElementById("switcher");
+const stylesheet = document.getElementById("main-stylesheet");
 
-  if (switcher.checked) {
-    stylesheet.setAttribute("href", "light-theme-style.css");
-  } else {
-    stylesheet.setAttribute("href", "style.css");
-  }
+switcher.addEventListener("change", () => {
+  const theme = switcher.checked ? "light" : "dark";
+  stylesheet.setAttribute(
+    "href",
+    theme === "light" ? "light-theme-style.css" : "style.css"
+  );
+  localStorage.setItem("theme", theme); // Store the theme preference in local storage
 });
+
+// Function to retrieve the theme preference from local storage
+function getThemePreference() {
+  return localStorage.getItem("theme") || "dark"; // Default to dark theme if no preference is found
+}
+
+// Set the initial theme based on the stored preference
+const initialTheme = getThemePreference();
+if (initialTheme === "light") {
+  switcher.checked = true;
+  stylesheet.setAttribute("href", "light-theme-style.css");
+}
 
 // call functions on scroll
 window.onscroll = function () {
@@ -111,53 +124,78 @@ function scrollBarTracker() {
 
 // Linking cards to their own pages
 
-const webAppsCard = document.querySelector("#features > div.card-wrapper > div:nth-child(1)");
-const webDevelopmentCard = document.querySelector("#features > div.card-wrapper > div:nth-child(2)");
-const backEndDevelopmentCard = document.querySelector("#features > div.card-wrapper > div:nth-child(3)");
-const uxUICard = document.querySelector("#features > div.card-wrapper > div:nth-child(4)");
-const APIDevelopmentCard = document.querySelector("#features > div.card-wrapper > div:nth-child(5)");
-const personalMaintenanceCard = document.querySelector("#features > div.card-wrapper > div:nth-child(6)");
+const webAppsCard = document.querySelector(
+  "#features > div.card-wrapper > div:nth-child(1)"
+);
+const webDevelopmentCard = document.querySelector(
+  "#features > div.card-wrapper > div:nth-child(2)"
+);
+const backEndDevelopmentCard = document.querySelector(
+  "#features > div.card-wrapper > div:nth-child(3)"
+);
+const uxUICard = document.querySelector(
+  "#features > div.card-wrapper > div:nth-child(4)"
+);
+const APIDevelopmentCard = document.querySelector(
+  "#features > div.card-wrapper > div:nth-child(5)"
+);
+const personalMaintenanceCard = document.querySelector(
+  "#features > div.card-wrapper > div:nth-child(6)"
+);
 
-webAppsCard.addEventListener('click', webAppsHandler);
-webDevelopmentCard.addEventListener('click',webDevelopmentHandler);
-backEndDevelopmentCard.addEventListener('click', backEndDevelopmentHandler);
-uxUICard.addEventListener('click', uxUIHandler);
-APIDevelopmentCard.addEventListener('click', APIDevelopmentHandler);
-personalMaintenanceCard.addEventListener('click', personalMaintenanceHandler);
-
+webAppsCard.addEventListener("click", webAppsHandler);
+webDevelopmentCard.addEventListener("click", webDevelopmentHandler);
+backEndDevelopmentCard.addEventListener("click", backEndDevelopmentHandler);
+uxUICard.addEventListener("click", uxUIHandler);
+APIDevelopmentCard.addEventListener("click", APIDevelopmentHandler);
+personalMaintenanceCard.addEventListener("click", personalMaintenanceHandler);
 
 function webAppsHandler() {
-  window.location.href = "web-apps.html"
+  openPageWithThemePreference("web-apps.html");
 }
 
 function webDevelopmentHandler() {
-  window.location.href = "web-consultation.html"
+  openPageWithThemePreference("web-consultation.html");
 }
 
 function backEndDevelopmentHandler() {
-  window.location.href = "back-end-development.html"
+  openPageWithThemePreference("back-end-development.html");
 }
 
 function uxUIHandler() {
-  window.location.href = "ui-ux-process.html"
+  openPageWithThemePreference("ui-ux-process.html");
 }
 
 function APIDevelopmentHandler() {
-  window.location.href = "api-development.html"
+  openPageWithThemePreference("api-development.html");
 }
 
 function personalMaintenanceHandler() {
-  window.location.href = "personal-maintenance.html"
+  openPageWithThemePreference("personal-maintenance.html");
 }
 
-const navLinks = document.querySelectorAll('.nav-list a');
+function openPageWithThemePreference(page) {
+  const themePreference = getThemePreference();
+  window.location.href = `${page}?theme=${themePreference}`;
+}
+
+// Apply the theme preference when opening each page
+document.addEventListener("DOMContentLoaded", () => {
+  const themePreference = getThemePreference();
+  if (themePreference === "light") {
+    switcher.checked = true;
+    stylesheet.setAttribute("href", "light-theme-style.css");
+  }
+});
+
+const navLinks = document.querySelectorAll(".nav-list a");
 
 for (const link of navLinks) {
-  link.addEventListener('click', (event) => {
+  link.addEventListener("click", (event) => {
     event.preventDefault();
-    const targetId = link.getAttribute('href');
+    const targetId = link.getAttribute("href");
     document.querySelector(targetId).scrollIntoView({
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   });
 }
