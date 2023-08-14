@@ -1,26 +1,15 @@
 const consultationBtn = document.querySelector(".consultation-btn");
-consultationBtn.addEventListener("click", validateForm);
-
-function validateForm(event) {
-  event.preventDefault();
-  
+consultationBtn.addEventListener("click", () => {
   const nameField = document.querySelector(".name");
   const emailField = document.querySelector(".mail");
   const messageField = document.querySelector("#input-message");
   
-  if (nameField.value === "") {
-    showErrorMessage(nameField, "Name is required");
-    return;
+  if (nameField.value !== "" && emailField.value !== "" && messageField.value === "") {
+    // All fields are filled, proceed to the thank you page
+    window.location.href = "typewriter-text.html";
   }
-  
-  if (emailField.value === "") {
-    showErrorMessage(emailField, "Email is required");
-    return;
-  }
-  
-  // All fields are filled, proceed to the thank you page
-  window.location.href = "typewriter-text.html";
-}
+});
+
 
 function showErrorMessage(field, message) {
   const errorMessage = document.createElement("div");

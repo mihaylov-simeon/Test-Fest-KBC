@@ -214,10 +214,6 @@ label::after {
     text-align: center;
 }
 
-#hero > ul p:hover  {
-    background-color: #0f2448;
-}
-
 #hero .hero-img:hover {
     opacity: 60%;
     transition: 0.5s;
